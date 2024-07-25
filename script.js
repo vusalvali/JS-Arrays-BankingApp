@@ -10,7 +10,7 @@
 // DIFFERENT DATA! Contains movement dates, currency and locale
 
 const account1 = {
-  owner: 'Jonas Schmedtmann',
+  owner: 'Jhon Shengretty',
   movements: [200, 455.23, -306.5, 25000, -642.21, -133.9, 79.97, 1300],
   interestRate: 1.2, // %
   pin: 1111,
@@ -153,7 +153,7 @@ const calcDisplaySummary = function (acc) {
     .filter(mov => mov < 0)
     .reduce((acc, mov) => acc + mov, 0);
   // labelSumOut.textContent = `${Math.abs(out).toFixed(2)}€`
-  labelSumOut.textContent = formatCur(Math.abs(out), acc.locale, acc.currency);;
+  labelSumOut.textContent = formatCur(Math.abs(out), acc.locale, acc.currency);
 
   const interest = acc.movements
     .filter(mov => mov > 0)
@@ -328,6 +328,5 @@ btnSort.addEventListener('click', function (e) {
 
 // 104 144 173 208 217
 
-
-console.log(25 ** (1/2))
-console.log(Number.parseInt('10px'))
+console.log(25 ** (1 / 2));
+console.log(Number.parseInt('10px'));
